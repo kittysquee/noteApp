@@ -12,13 +12,21 @@
 
   function testAddNote(){
     var note = new Note();
-    note.addNote("Hello")
+    note.addNote("Hello");
 
     if (note.noteArray[note.noteArray.length-1] !== "Hello") {
       throw new Error("It does not add notes to the array");
     } else {
       console.log("This test passes!");
     }
+  };
+
+  function testPrintNote() {
+    var note = new Note();
+    note.addNote("Hello");
+
+
+    if (
   };
 
   testNote();
