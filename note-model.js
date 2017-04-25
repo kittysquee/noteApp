@@ -9,9 +9,10 @@
   }
 
   Note.prototype.printNote = function() {
-    var lastItem = this.noteArray[this.noteArray.length-1];
-    return lastItem;
-  }
+    for(var i = 0; i < this.noteArray.length; i++){
+      return this.noteArray[i];
+    }
+  };
 
   exports.Note = Note;
 })(this);
