@@ -1,6 +1,6 @@
 (function(exports){
-  function NoteController(list){
-    this.listView = new ListView(list);
+  function NoteController(listView){
+    this.listView = listView;
   }
   NoteController.prototype.sendToIndex = function() {
     document.getElementById('app').innerHTML = this.listView.htmlConverter();
