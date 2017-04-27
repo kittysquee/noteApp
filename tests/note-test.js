@@ -13,8 +13,9 @@
   function testAddId() {
     var list = new List();
     list.addNote("Connie!");
-    list.notes[0].addId();
+    list.addNote("Pixel");
     assert.isTrue(list.notes[0].id === 0);
+    assert.isTrue(list.notes[1].id === 1);
   }
 
   testNote();

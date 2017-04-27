@@ -6,6 +6,7 @@
 
   List.prototype.addNote = function(text) {
     var newNote = new Note(text);
+    newNote.addId(this.notes.length)
     this.notes.push(newNote);
   };
 
